@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI Bridge",
+    "description": "Two-way prompt relay between this session and other AIs over a local HTTP endpoint."
+  }
+}

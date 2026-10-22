@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI 接线板",
+    "description": "让别的 AI 通过本机 HTTP 把提示词递进这个会话，我的回复也同步到 outbox 供对方读取（双向）。"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "dsh-ai-bridge",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "AI 接线板：让别的 AI 通过本机 HTTP 把提示词递进 DeepSeek Harness 会话，我的回复也同步到 outbox 供对方读取（双向）。 / Two-way prompt relay between a DSH session and any other AI over local HTTP.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ai-bridge",
+    "multi-agent",
+    "relay",
+    "mcp"
+  ],
+  "license": "MIT",
+  "author": "dsh-ai-bridge contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhhjy/dsh-ai-bridge.git"
+  },
+  "homepage": "https://github.com/jhhjy/dsh-ai-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/jhhjy/dsh-ai-bridge/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}
